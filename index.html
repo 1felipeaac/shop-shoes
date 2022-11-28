@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>RocketShoes</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav id="nav-header">
+                <ul>
+                    <li><a href="#"><img src="./assets/logo.svg" alt=""></a></li>
+                    <li><a href="#">HOMEM</a></li>
+                    <li><a href="#">MULHER</a></li>
+                    <li><a href="#">CRIANÇA</a></li>
+                    <li><a href="#">CUSTOMIZAR</a></li>
+                    <li>
+                        <form id="form-busca" action="http://www.google.com/search" method="get">
+                            <button id="button-search"></button>
+                            <input type="search" name="q" list="serchterms" placeholder="Pesquisar" aria-label="Pesquisa">
+                        </form>
+                    </li>
+                    <li><a href="#"><img src="./assets/icon-bag.svg" alt=""></a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside>
+            <div class="descricao">
+                <h1>Tenis esportivo para corrida Top</h1>
+                <p>Esse tênis tem o intuito de te deixar ainda mais fitness, focado e musculoso</p>
+                <h2>R$ 1.000,00</h2>
+                <button id="botao-comprar">Comprar</button>
+            </div>
+        </aside>
+        <main>
+            <div id="ampliado">
+                <img id="produto-ampliado"src="./assets/tenis-1-ampliado.png" alt="">
+            </div>
+            <div id="galeria">
+                <label class="produto">
+                    <img class="img_produto" src="./assets/tenis-1-galeria.png" alt="">
+                    <input class="radio_select" type="radio" name="radio" value="produto1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="produto">
+                    <img class="img_produto" src="./assets/tenis-2-galeria.png" alt="">
+                    <input class="radio_select" type="radio" name="radio" value="produto2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="produto">
+                    <img class="img_produto" src="./assets/tenis-3-galeria.png" alt="">
+                    <input class="radio_select" type="radio" name="radio" value="produto3">
+                    <span class="checkmark"></span>
+                </label>
+
+            </div>
+        </main>
+        <footer>
+            <nav id="nav-footer">
+                <ul>
+                    <li>
+                        <iframe 
+                            src="https://www.youtube.com/embed/SejWVRQZwRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </li>
+                    <li><a href="#">FACEBOOK</a></li>
+                    <li><a href="#">INSTAGRAM</a></li>
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="#">TWITTER</a></li>
+                    <li>
+                        <button id="botao-explorar">explore mais <img src="./assets/icon-arrow.svg" alt=""></button>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

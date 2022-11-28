@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+    "cabecalho cabecalho"
+    "descricao exibicao"
+    "rodape rodape"
+    ;
+    grid-template-rows: 60px 1fr 120px;
+    grid-template-columns: 1fr 70%;
+}
+
+header{
+    grid-area: cabecalho;
+    background-image: linear-gradient(to left, #C4C4C4, #C4C4C4 70%, #E5E5E5 70%);
+    font-weight: bold;
+
+}
+
+li, button, input{
+    cursor: pointer;
+}
+
+a{
+    font-weight: bold;
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+#nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
+
+#form-busca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    background-color: white;
+}
+
+#button-search{
+    background-image: url(
+        "./assets/icon-search.svg"
+    );
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: white;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+input{
+    border: none;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 7rem;
+    padding-left: 0px;
+}
+
+aside{
+    grid-area: descricao;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 35%;
+    height: max-content;
+}
+
+#botao-comprar{
+    background-color: red;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 60px;
+    width: 150px;
+    align-self: flex-start;
+}
+
+h1{
+    font-size: xx-large;
+    text-transform: capitalize;
+}
+
+p{
+    font-size: xx-small;
+    color: #9C9696;
+}
+
+h2{
+    align-self: flex-start
+}
+
+main{
+    grid-area: exibicao;
+    background-color: #C4C4C4;
+    height: 70vh;
+    box-sizing: border-box;
+}
+
+#ampliado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+}
+
+#produto-ampliado{
+    height: 100%;
+    width: auto;
+}
+
+#galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    gap: 5rem;
+}
+
+.produto{
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.produto input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    width: auto;
+}
+
+.produto input:checked ~ .checkmark {
+    background-color: red;
+}
+
+.img_produto{
+    height: 120px;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+footer{
+    grid-area: rodape;
+    align-self: center;
+}
+
+#nav-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
+
+iframe{
+    height: 100px;
+    width: 200px;
+}
+
+#botao-explorar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    gap: 1.5rem;
+    height: 100px;
+    width: 250px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
